@@ -1,0 +1,6 @@
+{
+    "mongoURI":
+      "mongodb+srv://admin:1234@ptbooking.qwkow.mongodb.net/myFirstDatabase?retryWrites=true&w=majority"
+}
+  
+  
