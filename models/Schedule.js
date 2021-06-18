@@ -1,6 +1,6 @@
 const mongoose = require('mongoose');
 
-const ScheduleSchema = new mongoose.Schema({
+const scheduleSchema = new mongoose.Schema({
   program: {
     type: String,
     required: true
@@ -27,12 +27,28 @@ const ScheduleSchema = new mongoose.Schema({
   },
   user: [{
     type: mongoose.Schema.Types.ObjectId,
-    ref: 'User'
+    ref: 'user'
   }],
   created: {
     type: Date,
+    required:true,
     default: Date.now
   }
 });
 
-module.exports = mongoose.model('schedule', ScheduleSchema);
+module.exports = mongoose.model('schedule', scheduleSchema);
+
+
+
+/*
+
+const schedule = schedule()
+schedule.format("dddd MMM Mo YYYY ")
+
+
+
+const today = Date.now();
+
+console.log(new Intl.DateTimeFormat('en-US', {year: 'numeric', month: '2-digit',day: '2-digit', hour: '2-digit', minute: '2-digit', second: '2-digit'}).format(today));
+
+*/
