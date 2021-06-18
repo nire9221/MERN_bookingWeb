@@ -1,7 +1,7 @@
 # MERN_shopping
 Mongo DB, Express JS, React JS, Node JS
 
-## development tool 
+## Development tool 
 - Visual studio 
  
 ## Run project 
